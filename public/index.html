@@ -4,8 +4,53 @@
 	<meta charset='utf-8'>
 	<meta name='viewport' content='width=device-width'>
 	<title>GPS recorder</title>
+	<style>
+* { box-sizing: border-box }
+html, body { padding: 0; margin: 0; }
+header {
+	padding: 0.3rem;
+	width: 100%;
+	text-align: center;
+	background-color: black;
+	color: white;
+}
+header > h1 {
+	padding: 0;
+	font-size: 1.2rem;
+	font-weight: bold;
+}
+footer {
+	position: fixed;
+	display: table;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+	font-size: 0.8rem;
+}
+#footer-left, #footer-center, #footer-right {
+	display: table-cell;
+	width: 33.3%;
+	padding: 0.5rem;
+}
+#footer-left { text-align: left; }
+#footer-center { text-align: center; }
+#footer-right { text-align: right; }
+#main { padding: 2rem; }
+	</style>
 </head>
 <body>
+	<header>
+		<h1>GPS recorder</h1>
+	</header>
+	<div id="main"></div>
+	<footer>
+		<div id="footer-left"></div>
+		<div id="footer-center"></div>
+		<div id="footer-right"></div>
+	</footer>
 	<script src='bundle.js'></script>
 </body>
 </html>

@@ -13,7 +13,8 @@
   },
   "dependencies": {
     "browser-geolocation": "^2.0.0",
-    "geolocation-to-gpx": "^1.0.0"
+    "geolocation-to-gpx": "^1.0.0",
+    "xml-string": "^2.0.1"
   },
   "scripts": {
     "build": "rollup -c",
