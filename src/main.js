@@ -66,8 +66,8 @@ window.addEventListener('keydown', ({ key }) => {
   }
   if (state && state.page === 'stopped') {
     if (key === 'Enter') { return saveFile() }
-    if (key === 'SoftKeyLeft') { return onReset() }
-    if (key === 'SoftKeyRight') { return onStart() }
+    if (key === 'SoftLeft') { return onReset() }
+    if (key === 'SoftRight') { return onStart() }
   }
   if (state && state.page === 'saved') {
     if (key === 'Enter') { return onLoad() }
