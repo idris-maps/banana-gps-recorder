@@ -16,7 +16,7 @@ export default data => {
   const trk = gpx.c('trk')
   const trkseg = trk.c('trkseg')
   data.forEach(({ lat, lng, alt, timestamp }) => {
-      const trkpt = trkseg.c('trkpt').a({ lat, lng })
+      const trkpt = trkseg.c('trkpt').a({ lat, lon: lng })
       if(alt) {
         trkpt.c('ele').d(alt)
       }
